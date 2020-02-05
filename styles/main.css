@@ -1,0 +1,53 @@
+@font-face {
+	font-family: VCROSDMono;
+	src: url("../fonts/VCROSDMono.woff"),
+		 url("../fonts/VCROSDMono.woff2");
+}
+
+html {
+    font-size: 18px;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+	font-family: VCROSDMono;
+	font-style: normal;
+	font-weight: 400;
+	background-color: #f5f0dd;
+	color: #ababab;
+	margin: 25px;
+	overflow-y: scroll;
+	padding: 0px;
+	text-transform: uppercase;
+}
+
+a:link {
+	color: #ababab;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ababab;
+}
+
+a:hover {
+	color: #000000;
+}
+
+a:active {
+	color: #000000;
+}
+
+.note {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url("../images/note1.png") no-repeat 0px 0px;
+}
+
+.note:hover {
+	background: url("../images/note1.png") no-repeat -32px 0px;
+}
