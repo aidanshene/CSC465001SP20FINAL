@@ -1,3 +1,4 @@
+/* Aidan Shene */
 @font-face {
 	font-family: VCROSDMono;
 	src: url("../fonts/VCROSDMono.woff"),
@@ -5,7 +6,7 @@
 }
 
 html {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 body, html {
@@ -16,7 +17,7 @@ body {
 	font-family: VCROSDMono;
 	font-style: normal;
 	font-weight: 400;
-	background-color: #f5f0dd;
+	background-color: #fbfbfb;
 	color: #ababab;
 	margin: 5px;
 	overflow-y: scroll;
@@ -24,9 +25,20 @@ body {
 	text-transform: uppercase;
 }
 
+.logo {
+	display: inline-block;
+	width: 230px;
+	height: 32px;
+	background: url("../images/logo.png") no-repeat 0px 0px;
+}
+
+.logo:hover {
+	background: url("../images/logo.png") no-repeat 0px -32px;
+}
+
 a:link {
 	color: #ababab;
-	outline: 0;
+	outline: 0px;
 	text-decoration: none;
 }
 
@@ -44,30 +56,39 @@ a:active {
 
 .navigation-sidebar-container {
 	position: fixed;
+	padding: 15px;
+	top: 0px;
 }
 
-.navigation-sidebar {
-	position: fixed;
-	bottom: 15px;
-}
-
-ol ul {
+.navigation-sidebar ul{
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	padding: 0px;
+	position: fixed;
+	bottom: 0px;
 }
 
-.navigation-sidebar-items li {
+.navigation-sidebar-items li:not(:last-child) {
+	padding: 0px;
 	margin-bottom: 15px;
 }
 
-.logo {
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	background: url("../images/note1.png") no-repeat 0px 0px;
+section {
+	padding-left: 25px;
 }
 
-.logo:hover {
-	background: url("../images/note1.png") no-repeat -32px 0px;
+.center-image {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	max-width: 50%;
+	max-height: 50%;
+}
+
+.footer {
+	position: fixed;
+	bottom: 20px;
+	right: 31%;
+	text-align: center;
+	max-width: 100%;
 }

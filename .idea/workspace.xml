@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acbfc852-ed4e-42c8-8626-1fd6e187e76e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/note.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/note1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
@@ -21,13 +23,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XB5PUdEOVmcJPnAY9uNqKxUdZV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -45,16 +50,20 @@
       <updated>1580506622770</updated>
       <workItem from="1580506623990" duration="4877000" />
       <workItem from="1580518057683" duration="49000" />
+      <workItem from="1580953476038" duration="10933000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1580518057709">
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1580953476900">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/2560.145.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1580518057709" />
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/2560.145.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1580953476900" />
   </component>
 </project>
