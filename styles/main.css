@@ -18,7 +18,7 @@ body {
 	font-weight: 400;
 	background-color: #f5f0dd;
 	color: #ababab;
-	margin: 25px;
+	margin: 5px;
 	overflow-y: scroll;
 	padding: 0px;
 	text-transform: uppercase;
@@ -26,6 +26,7 @@ body {
 
 a:link {
 	color: #ababab;
+	outline: 0;
 	text-decoration: none;
 }
 
@@ -41,13 +42,32 @@ a:active {
 	color: #000000;
 }
 
-.note {
+.navigation-sidebar-container {
+	position: fixed;
+}
+
+.navigation-sidebar {
+	position: fixed;
+	bottom: 15px;
+}
+
+ol ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation-sidebar-items li {
+	margin-bottom: 15px;
+}
+
+.logo {
 	display: inline-block;
 	width: 32px;
 	height: 32px;
 	background: url("../images/note1.png") no-repeat 0px 0px;
 }
 
-.note:hover {
+.logo:hover {
 	background: url("../images/note1.png") no-repeat -32px 0px;
 }
