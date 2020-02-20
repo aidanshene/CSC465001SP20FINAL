@@ -14,31 +14,53 @@ body, html {
 }
 
 body {
-	font-family: VCROSDMono;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 33% 33% 33%;
+	font-family: VCROSDMono, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	background-color: #fbfbfb;
 	color: #ababab;
 	margin: 5px;
 	overflow-y: scroll;
-	padding: 0px;
+	padding: 0;
 	text-transform: uppercase;
+}
+
+header {
+	grid-column-start: 1;
+	position: fixed;
+	padding: 15px;
+	top: 0;
 }
 
 .logo {
 	display: inline-block;
 	width: 230px;
 	height: 32px;
-	background: url("../images/logo.png") no-repeat 0px 0px;
+	background: url("../images/logo.png") no-repeat 0 0;
 }
 
 .logo:hover {
-	background: url("../images/logo.png") no-repeat 0px -32px;
+	background: url("../images/logo.png") no-repeat 0 -32px;
+}
+
+.navigation-sidebar ul{
+	list-style: none;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+}
+
+.navigation-sidebar-items li:not(:last-child) {
+	padding: 0;
+	margin-bottom: 15px;
 }
 
 a:link {
 	color: #ababab;
-	outline: 0px;
+	outline: none;
 	text-decoration: none;
 }
 
@@ -54,26 +76,9 @@ a:active {
 	color: #000000;
 }
 
-.navigation-sidebar-container {
-	position: fixed;
-	padding: 15px;
-	top: 0px;
-}
-
-.navigation-sidebar ul{
-	list-style: none;
-	padding: 0px;
-	position: fixed;
-	bottom: 0px;
-}
-
-.navigation-sidebar-items li:not(:last-child) {
-	padding: 0px;
-	margin-bottom: 15px;
-}
-
 section {
 	padding-left: 25px;
+	padding-top: 50px;
 }
 
 .center-image {
@@ -85,7 +90,51 @@ section {
 	max-height: 50%;
 }
 
-.footer {
+input {
+	font-family: VCROSDMono, sans-serif;
+	outline: none;
+	background: #fbfbfb;
+	border-style: none;
+	border-bottom: 1px solid #ababab;
+}
+
+button {
+	cursor: pointer;
+	font-family: VCROSDMono, sans-serif;
+	background: #fbfbfb;
+	color: #ababab;
+	border: none;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+button:hover {
+	color: #000000;
+}
+
+button:focus, button:active {
+	outline: none;
+	border-bottom: 1px solid #ababab;
+}
+
+.lizard {
+	grid-column-start: 3;
+	grid-row-start: 2;
+}
+
+.login {
+	grid-column-start: 4;
+	grid-row-start: 2;
+	grid-row-end: 2;
+}
+
+.register {
+	position: relative;
+	font-size: 13px;
+	left: 47px;
+}
+
+footer {
 	position: fixed;
 	bottom: 20px;
 	right: 31%;

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="acbfc852-ed4e-42c8-8626-1fd6e187e76e" name="Default Changelist" comment="">
+    <list default="true" id="acbfc852-ed4e-42c8-8626-1fd6e187e76e" name="Default Changelist" comment="includes implemented and early registration form">
+      <change afterPath="$PROJECT_DIR$/images/login_lizard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CSC465001SP20FINAL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CSC465001SP20FINAL.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/note.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/note1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1XB5PUdEOVmcJPnAY9uNqKxUdZV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,7 +43,6 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -50,7 +58,6 @@
       <updated>1580506622770</updated>
       <workItem from="1580506623990" duration="4877000" />
       <workItem from="1580518057683" duration="49000" />
-      <workItem from="1580953476038" duration="10933000" />
     </task>
     <servers />
   </component>
@@ -59,11 +66,33 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="includes implemented and early registration form" />
+    <option name="LAST_COMMIT_MESSAGE" value="includes implemented and early registration form" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1580953476900">
+    <state x="361" y="72" key="#Deployment" timestamp="1582210624663">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="72" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1582210624663" />
+    <state x="476" y="4" key="#PHP" timestamp="1582166271257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="476" y="4" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1582166271257" />
+    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1582211260715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582211260715" />
+    <state x="604" y="337" key="NewPhpFileDialog" timestamp="1582210800887">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="337" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1582210800887" />
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1580518057709">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/2560.145.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1580953476900" />
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/2560.145.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1580518057709" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1582169010848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582169010848" />
   </component>
 </project>
