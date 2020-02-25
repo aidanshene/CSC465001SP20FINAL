@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="acbfc852-ed4e-42c8-8626-1fd6e187e76e" name="Default Changelist" comment="">
+    <list default="true" id="dd93053a-c5c2-4ffe-957c-e992202f8926" name="Default Changelist" comment="includes implemented and early registration form">
+      <change afterPath="$PROJECT_DIR$/projfiles.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +16,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,10 +97,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="476" y="4" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1582166271257" />
-    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1582592015641">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="655" y="14" key="CommitChangelistDialog2" timestamp="1582603379546">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582592015641" />
+    <state x="655" y="14" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1582603379546" />
     <state x="604" y="337" key="NewPhpFileDialog" timestamp="1582210800887">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -152,8 +152,7 @@ button:focus, button:active {
 
 .register {
 	position: relative;
-	font-size: 13px;
-	left: 47px;
+	left: 95px;
 }
 
 .registration-form-container {
@@ -181,6 +180,23 @@ input[type=date], input[type=text], input[type=email], input[type=password] {
 input[type=radio] {
 	margin: 0;
 	padding: 0;
+}
+
+input[type=submit] {
+	text-transform: uppercase;
+	border-bottom: none;
+	color: #ababab;
+	padding: 0;
+}
+
+input[type=submit]:hover {
+	cursor: pointer;
+	color: #000000;
+}
+
+.warn {
+	color: red;
+	font-size: 12px;
 }
 
 .footer-container {
