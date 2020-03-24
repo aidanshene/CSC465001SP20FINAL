@@ -1,5 +1,5 @@
 <?php
-$title = 'Login';
+$title = 'Music Shop - Login';
 include('includes/header.php');
 ?>
 <section class="center-image-container">
