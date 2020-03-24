@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dd93053a-c5c2-4ffe-957c-e992202f8926" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projfiles.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +61,8 @@
       <workItem from="1580506623990" duration="4877000" />
       <workItem from="1580518057683" duration="49000" />
       <workItem from="1584983418098" duration="6229000" />
-      <workItem from="1585006897335" duration="11287000" />
+      <workItem from="1585006897335" duration="11687000" />
+      <workItem from="1585064573782" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="includes implemented and early registration form">
       <created>1582213783706</created>
@@ -87,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582603435546</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="more registration checks, title updates, etc.">
+      <created>1585064194125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585064194125</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,7 +102,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="includes implemented and early registration form" />
     <MESSAGE value="sticky form implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="sticky form implemented" />
+    <MESSAGE value="more registration checks, title updates, etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="more registration checks, title updates, etc." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Deployment" timestamp="1582210624663">
@@ -108,20 +114,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="476" y="4" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1582166271257" />
-    <state x="655" y="14" key="CommitChangelistDialog2" timestamp="1585064170964">
+    <state x="655" y="14" key="CommitChangelistDialog2" timestamp="1585064193497">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582592015641" />
-    <state x="655" y="14" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1585064170964" />
+    <state x="655" y="14" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1585064193497" />
     <state x="604" y="337" key="NewPhpFileDialog" timestamp="1582210800887">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="337" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1582210800887" />
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1585007039942">
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1585064574053">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="976" y="524" key="com.intellij.ide.util.TipDialog/2560.145.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1580518057709" />
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1585007039942" />
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1585064574053" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1582169010848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

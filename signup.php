@@ -141,7 +141,7 @@ if(isset($_POST['register'])) { // Input validation and variable declaration for
             <label><input type="text" name="eml" <?php if(isset($email)) echo 'value="' . htmlspecialchars($email) . '"'; else echo 'placeholder="email"';?>></label>
             <br>
             <?php if(isset($incomplete['date_of_birth'])) echo $incomplete['date_of_birth'] . '<br>'; else echo '<br>';?>
-            <label><input type="date" name="dob" <?php if(isset($date_of_birth)) echo 'value="' . htmlspecialchars($date_of_birth) . '"';?>></label>
+            <label><input type="text" name="dob" <?php if(isset($date_of_birth)) echo 'value="' . htmlspecialchars($date_of_birth) . '"'; else echo 'placeholder="date of birth"';?> onfocus="(this.type='date')" onblur="(this.type='text')"></label>
             <br>
             <?php if(isset($incomplete['gender'])) echo $incomplete['gender'] . '<br>'; else echo '<br>';?>
             <label class="gender"><input type="radio" name="gender" value="M" <?php if(isset($gender) && $gender == 'M') echo ' checked';?>> Male</label>
