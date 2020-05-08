@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd93053a-c5c2-4ffe-957c-e992202f8926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/missing_art.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/title.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/aidan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/aidan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing.php" beforeDir="false" afterPath="$PROJECT_DIR$/landing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +35,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="satoshi.cis.uncw.edu" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="satoshi.cis.uncw.edu" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="satoshi.cis.uncw.edu" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="aws6057: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -54,7 +69,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab 7" />
   </component>
@@ -76,7 +93,7 @@
       <workItem from="1585173938225" duration="13871000" />
       <workItem from="1585245004917" duration="631000" />
       <workItem from="1586801946960" duration="26000" />
-      <workItem from="1588878659613" duration="23828000" />
+      <workItem from="1588878659613" duration="32361000" />
     </task>
     <task id="LOCAL-00001" summary="includes implemented and early registration form">
       <created>1582213783706</created>
@@ -113,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585064926234</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updates">
+      <created>1588956232315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588956232315</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +149,8 @@
     <MESSAGE value="sticky form implemented" />
     <MESSAGE value="more registration checks, title updates, etc." />
     <MESSAGE value="fixed dob" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed dob" />
+    <MESSAGE value="updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Deployment" timestamp="1582210624663">
@@ -136,20 +161,36 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="476" y="4" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1582166271257" />
-    <state x="655" y="14" key="CommitChangelistDialog2" timestamp="1585064925719">
+    <state x="872" y="359" key="#SQL_Dialects" timestamp="1588970916462">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="359" key="#SQL_Dialects/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1588970916462" />
+    <state x="872" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588970809041">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1588970809041" />
+    <state x="655" y="14" key="CommitChangelistDialog2" timestamp="1588956231824">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582592015641" />
-    <state x="655" y="14" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1585064925719" />
+    <state x="655" y="14" key="CommitChangelistDialog2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1588956231824" />
     <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1586801970771">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="455" key="FileChooserDialogImpl/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1586801970771" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588970853851">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1588970853851" />
     <state x="1007" y="573" key="NewPhpFileDialog" timestamp="1588955520152">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="604" y="337" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1582210800887" />
     <state x="1007" y="573" key="NewPhpFileDialog/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1588955520152" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1588956236499">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/2560.87.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1588956236499" />
     <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1588878688107">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

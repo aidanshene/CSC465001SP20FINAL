@@ -18,4 +18,5 @@
         admin@musicshop.com  |  +1 910 962 5555  |  601 S. College Road
     </div>
 </footer>
-<?php include('includes/footer.php'); ?>
+<?php
+include('includes/footer.php');?>

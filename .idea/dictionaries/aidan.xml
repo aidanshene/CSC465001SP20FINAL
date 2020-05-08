@@ -2,6 +2,7 @@
   <dictionary name="aidan">
     <words>
       <w>fname</w>
+      <w>htmlspecialchars</w>
       <w>signup</w>
       <w>verif</w>
       <w>yandhi</w>

@@ -18,9 +18,9 @@ if(isset($_POST['login'])) {
 
     while(!isset($error)) {
         require_once('../../mysqli_connect.php');
-        $sql_check_username = "SELECT username, role, pwdHash
+        $sql_check_username = 'SELECT username, role, pwdHash
                                FROM users
-                               WHERE username = ?";
+                               WHERE username = ?';
         $stmt_check_username = mysqli_prepare($dbc, $sql_check_username);
         mysqli_stmt_bind_param($stmt_check_username, 's', $username);
         mysqli_stmt_execute($stmt_check_username);
@@ -43,7 +43,8 @@ if(isset($_POST['login'])) {
             $error['username'] = '<span class="warn">Username does not exist.</span>';
     }
 }
-?>
+
+if(!isset($_SESSION['username'])) {?>
 <section class="center-image-container">
     <div class="login-image">
         <img class="lizard" src="images/login_lizard.gif" alt="Login Lizard">
@@ -61,4 +62,10 @@ if(isset($_POST['login'])) {
         <a class="register" href="signup.php">Register</a>
     </form>
 </section>
-<?php include('includes/footer.php'); ?>
+<?php } else {?>
+    <main>
+        <h3>You have reached this page in error.</h3>
+        <h3>You are already logged in as <?php echo htmlspecialchars($_SESSION['username']);?>.</h3>
+    </main>
+<?php }
+include('includes/footer.php'); ?>
