@@ -1,5 +1,5 @@
 <?php
-    $title = 'Music Shop - Home';
+    $title = 'Home';
     include('includes/header.php');
 ?>
 <section class="site-desc-container">
