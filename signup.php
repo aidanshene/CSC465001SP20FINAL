@@ -108,14 +108,16 @@ if(isset($_POST['register'])) { // Input validation and variable declaration for
         $error['password_verify'] = '<span class="warn">Passwords do not match.</span>';
 
     if(!isset($error)) { // Checks if any field of the form is incomplete.
-        $sql_insert_account = 'INSERT INTO users (username, userFName, userLName, userEmail, userDOB, userGender, userDOR, pwdHash)
-			                   VALUES (?, ?, ?, ?, ?, ?, NOW(), ?)'; // Query the database to insert a new row for the account.
+        $sql_insert_account = 'INSERT INTO users (username, userFName, userLName, userEmail, userDOB, userGender, userDOR, userFolder, pwdHash)
+			                   VALUES (?, ?, ?, ?, ?, ?, NOW(), ?, ?)'; // Query the database to insert a new row for the account.
         $stmt_insert_account = mysqli_prepare($dbc, $sql_insert_account);
         $password_hash = password_hash($password, PASSWORD_DEFAULT);
-        mysqli_stmt_bind_param($stmt_insert_account, 'sssssss', $username, $first_name, $last_name, $email, $date_of_birth, $gender, $password_hash);
+        $folder = strtolower($username);
+        mysqli_stmt_bind_param($stmt_insert_account, 'ssssssss', $username, $first_name, $last_name, $email, $date_of_birth, $gender, $folder, $password_hash);
         mysqli_stmt_execute($stmt_insert_account);
-
         if (mysqli_stmt_affected_rows($stmt_insert_account)) { // Checks if the insertion query was run successfully and displays a success message.
+            $dir_path = '../../uploads/' . $folder;
+            mkdir($dir_path,0777);
             echo '<p>Thank you, <strong>' . htmlspecialchars($first_name) . ' ' . htmlspecialchars($last_name). '</strong>, for registering for Music Shop:<br>';
             echo 'You entered <strong>'. htmlspecialchars($date_of_birth) . '</strong> for your date of birth, and <strong>' . htmlspecialchars($gender) . '</strong> for your gender<br>';
             echo 'Additionally, your email is <strong>' . htmlspecialchars($email) . '</strong>, and you chose <strong>' . htmlspecialchars($username) . '</strong> as your username.<br></p>';
