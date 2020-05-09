@@ -26,7 +26,7 @@ include('includes/title.php');
             <?php } else {?>
                 <li><a href="login.php">Login</a></li>
             <?php }?>
-            <li><a href="#" <?php if($current_page == '#') echo 'id="here"';?>>Contact</a></li>
+            <li><a href="contact.php" <?php if($current_page == 'contact.php') echo 'id="here"';?>>Contact</a></li>
         </ul>
     </nav>
 </header>

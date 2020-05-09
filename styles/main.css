@@ -173,7 +173,7 @@ button:focus, button:active {
 	opacity: 1;
 }
 
-input[type=date], input[type=text], input[type=email], input[type=password] {
+input[type=date], input[type=text], input[type=email], input[type=password], input[type=file] {
 	width: 258px;
 }
 
@@ -215,10 +215,13 @@ input[type=submit]:hover {
 	text-decoration-line: underline;
 }
 
-section {
+.admin {
 	display: flex;
 	grid-column-start: 2;
-	grid-row-start: 1;
+	grid-row: 1 / 4;
 	justify-content: center;
 }
 
+select {
+	text-transform: capitalize;
+}

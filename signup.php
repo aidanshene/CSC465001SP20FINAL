@@ -162,4 +162,5 @@ if(isset($_POST['register'])) { // Input validation and variable declaration for
         </form>
     </div>
 </section>
-<?php include('includes/footer.php'); ?>
+<?php
+include('includes/footer.php'); ?>
