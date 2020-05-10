@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('../../secure_conn.php');
 if (!isset($_SESSION['userFolder'])) {
     require('includes/header.php');
     echo "<main><h2>We are sorry, but you must be logged in to play songs</h2>";

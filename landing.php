@@ -20,7 +20,7 @@ include('includes/header.php');?>
             mysqli_free_result($stmt_get_uploads);
             if(mysqli_stmt_affected_rows($stmt_get_uploads)) {
                 while($row = mysqli_fetch_assoc($upload_results)) {?>
-                    <a href="audio.php?file=<?= $row['fileName']?>" target="_blank"><?= $row['artist'] . ' - ' . $row['trackName']?></a>
+                    <a href="audio.php?file=<?= urlencode($row['fileName'])?>" target="_blank"><?= $row['artist'] . ' - ' . $row['trackName']?></a>
                     <br>
                     <br>
                     <?php }

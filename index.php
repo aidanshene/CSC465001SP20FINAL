@@ -1,5 +1,5 @@
 <?php
-    $title = 'Home';
+    require_once('../../reg_conn.php');
     include('includes/header.php');
 ?>
 <section class="site-desc-container">
