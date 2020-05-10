@@ -3,29 +3,29 @@ require_once('../../secure_conn.php');
 include('includes/header.php');
 echo '<main>';
 if (isset($_SESSION['userFolder'])){
-    if(!empty($_POST['artist'])) {
-        if (strlen($_POST['artist']) <= 30) {
-            if (ctype_alnum($_POST['artist']))
-                $artist = filter_var(trim($_POST['artist']), FILTER_SANITIZE_STRING);
-            else
-                $error['artist'] = '<span class="warn">Artist name must be alphanumeric.</span>';
-        }
-        else
-            $error['artist'] = '<span class="warn">Artist name cannot contain more than 30 characters.</span>';
-    }
-
-    if(!empty($_POST['trackName'])) {
-        if (strlen($_POST['trackName']) <= 30) {
-            if (ctype_alnum($_POST['trackName']))
-                $track_name = filter_var(trim($_POST['artist']), FILTER_SANITIZE_STRING);
-            else
-                $error['track_name'] = '<span class="warn">Track name must be alphanumeric.</span>';
-        }
-        else
-            $error['track_name'] = '<span class="warn">Track name cannot contain more than 30 characters.</span>';
-    }
-
     if(isset($_POST['upload'])) {
+        if(!empty($_POST['artist'])) {
+            if (strlen($_POST['artist']) <= 30) {
+                if (preg_match('/^[\w\-\s]+$/', $_POST['artist']))
+                    $artist = filter_var(trim($_POST['artist']), FILTER_SANITIZE_STRING);
+                else
+                    $error['artist'] = '<span class="warn">Artist name must be alphanumeric.</span>';
+            }
+            else
+                $error['artist'] = '<span class="warn">Artist name cannot contain more than 30 characters.</span>';
+        }
+
+        if(!empty($_POST['trackName'])) {
+            if (strlen($_POST['trackName']) <= 30) {
+                if (preg_match('/^[\w\-\s]+$/', $_POST['trackName']))
+                    $track_name = filter_var(trim($_POST['trackName']), FILTER_SANITIZE_STRING);
+                else
+                    $error['track_name'] = '<span class="warn">Track name must be alphanumeric.</span>';
+            }
+            else
+                $error['track_name'] = '<span class="warn">Track name cannot contain more than 30 characters.</span>';
+        }
+
         if(isset($_FILES['user_upload'])) {
             $allowed = array ('audio/mpeg', 'audio/mp4', 'audio/wave', 'audio/flac', 'audio/ogg');
             if(in_array($_FILES['user_upload']['type'], $allowed)) {
@@ -37,15 +37,18 @@ if (isset($_SESSION['userFolder'])){
                     $type = $_FILES['user_upload']['type'];
 
                     //write to database
-                    require_once ('../../mysqli_connect.php'); // Connect to the db.
+                    require_once('../../mysqli_connect.php'); // Connect to the db.
                     $sql_insert_upload = 'INSERT into user_uploads (username, fileName, fileType, artist, trackName) 
                                           VALUES (?, ?, ?, ?, ?)';
                     $stmt_insert_upload = mysqli_prepare($dbc, $sql_insert_upload);
                     $username = $_SESSION['username'];
                     mysqli_stmt_bind_param($stmt_insert_upload, 'sssss', $username, $name, $type, $artist, $track_name);
                     mysqli_stmt_execute($stmt_insert_upload);
-                    if (mysqli_stmt_affected_rows($stmt_insert_upload))
+                    if (mysqli_stmt_affected_rows($stmt_insert_upload)) {
                         echo '<h4>And the file data has been saved.</h4>';
+                        $artist = NULL;
+                        $track_name = NULL;
+                    }
                     else
                         echo '<h4>We were unable to save your file data.</h4>';
 
@@ -102,10 +105,10 @@ else {
             <fieldset>
                 <legend>Select an audio file of 2M or smaller to be uploaded:</legend>
                 <?php if(isset($error['artist'])) echo $error['artist'] . '<br>'; else echo '<br>';?>
-                <label><input type="text" name="artist" placeholder="Artist"></label>
+                <label><input type="text" name="artist" <?php if(isset($artist)) echo 'value="' . htmlspecialchars($artist) . '"'; else echo 'placeholder="artist"';?>></label>
                 <br>
                 <?php if(isset($error['track_name'])) echo $error['track_name'] . '<br>'; else echo '<br>';?>
-                <label><input type="text" name="trackName" placeholder="Track Name"></label>
+                <label><input type="text" name="trackName" <?php if(isset($track_name)) echo 'value="' . htmlspecialchars($track_name) . '"'; else echo 'placeholder="track name"';?>></label>
                 <br>
                 <?php if(isset($error['upload'])) echo $error['upload'] . '<br>'; else echo '<br>';?>
                 <label for="file">
@@ -113,7 +116,6 @@ else {
                 <br>
                 <input type="submit" name="upload" value="Upload">
             </fieldset>
-
         </form>
     </main>
 <?php

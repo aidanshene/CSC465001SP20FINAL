@@ -129,40 +129,45 @@ if(isset($_POST['register'])) { // Input validation and variable declaration for
         exit;
     }
 }
-?>
-<section class="registration-form-container">
-    <div class="registration-form">
-        <form action="signup.php" method="POST">
-            <?php if(isset($error['first_name'])) echo $error['first_name'] . '<br>';?>
-            <label><input type="text" name="fName" <?php if(isset($first_name)) echo 'value="' . htmlspecialchars($first_name) . '"'; else echo 'placeholder="first name"';?>></label>
-            <br>
-            <?php if(isset($error['last_name'])) echo $error['last_name'] . '<br>'; else echo '<br>';?>
-            <label><input type="text" name="lName" <?php if(isset($last_name)) echo 'value="' . htmlspecialchars($last_name) . '"'; else echo 'placeholder="last name"';?>></label>
-            <br>
-            <?php if(isset($error['email'])) echo $error['email'] . '<br>'; else echo '<br>';?>
-            <label><input type="text" name="eml" <?php if(isset($email)) echo 'value="' . htmlspecialchars($email) . '"'; else echo 'placeholder="email"';?>></label>
-            <br>
-            <?php if(isset($error['date_of_birth'])) echo $error['date_of_birth'] . '<br>'; else echo '<br>';?>
-            <label><input type="text" name="dob" <?php if(isset($date_of_birth)) echo 'value="' . htmlspecialchars($date_of_birth) . '"'; else echo 'placeholder="date of birth"';?> onfocus="(this.type='date')" onblur="(this.type='text')"></label>
-            <br>
-            <?php if(isset($error['gender'])) echo $error['gender'] . '<br>'; else echo '<br>';?>
-            <label class="gender"><input type="radio" name="gender" value="M" <?php if(isset($gender) && $gender == 'M') echo ' checked';?>> Male</label>
-            <label class="gender"><input type="radio" name="gender" value="F" <?php if(isset($gender) && $gender == 'F') echo ' checked';?>> Female</label>
-            <label class="gender"><input type="radio" name="gender" value="N" <?php if(isset($gender) && $gender == 'N') echo ' checked';?>> N/A</label>
-            <br>
-            <br>
-            <?php if(isset($error['username'])) echo $error['username'] . '<br>'; else echo '<br>';?>
-            <label><input type="text" name="uName" <?php if(isset($username)) echo 'value="' . htmlspecialchars($username) . '"'; else echo 'placeholder="username"'; ?>></label>
-            <br>
-            <?php if(isset($error['password'])) echo $error['password'] . '<br>'; else if(isset($error['password_verify'])) echo $error['password_verify'] . '<br>'; else echo '<br>';?>
-            <label><input type="password" name="pwd" placeholder="password"></label>
-            <br>
-            <br>
-            <label><input type="password" name="pwdVer" placeholder="verify password"></label>
-            <br>
-            <label><input type="submit" name="register" value="Register"></label>
-        </form>
-    </div>
-</section>
-<?php
+if(!isset($_SESSION['username'])) {?>
+    <section class="registration-form-container">
+        <div class="registration-form">
+            <form action="signup.php" method="POST">
+                <?php if(isset($error['first_name'])) echo $error['first_name'] . '<br>';?>
+                <label><input type="text" name="fName" <?php if(isset($first_name)) echo 'value="' . htmlspecialchars($first_name) . '"'; else echo 'placeholder="first name"';?>></label>
+                <br>
+                <?php if(isset($error['last_name'])) echo $error['last_name'] . '<br>'; else echo '<br>';?>
+                <label><input type="text" name="lName" <?php if(isset($last_name)) echo 'value="' . htmlspecialchars($last_name) . '"'; else echo 'placeholder="last name"';?>></label>
+                <br>
+                <?php if(isset($error['email'])) echo $error['email'] . '<br>'; else echo '<br>';?>
+                <label><input type="text" name="eml" <?php if(isset($email)) echo 'value="' . htmlspecialchars($email) . '"'; else echo 'placeholder="email"';?>></label>
+                <br>
+                <?php if(isset($error['date_of_birth'])) echo $error['date_of_birth'] . '<br>'; else echo '<br>';?>
+                <label><input type="text" name="dob" <?php if(isset($date_of_birth)) echo 'value="' . htmlspecialchars($date_of_birth) . '"'; else echo 'placeholder="date of birth"';?> onfocus="(this.type='date')" onblur="(this.type='text')"></label>
+                <br>
+                <?php if(isset($error['gender'])) echo $error['gender'] . '<br>'; else echo '<br>';?>
+                <label class="gender"><input type="radio" name="gender" value="M" <?php if(isset($gender) && $gender == 'M') echo ' checked';?>> Male</label>
+                <label class="gender"><input type="radio" name="gender" value="F" <?php if(isset($gender) && $gender == 'F') echo ' checked';?>> Female</label>
+                <label class="gender"><input type="radio" name="gender" value="N" <?php if(isset($gender) && $gender == 'N') echo ' checked';?>> N/A</label>
+                <br>
+                <br>
+                <?php if(isset($error['username'])) echo $error['username'] . '<br>'; else echo '<br>';?>
+                <label><input type="text" name="uName" <?php if(isset($username)) echo 'value="' . htmlspecialchars($username) . '"'; else echo 'placeholder="username"'; ?>></label>
+                <br>
+                <?php if(isset($error['password'])) echo $error['password'] . '<br>'; else if(isset($error['password_verify'])) echo $error['password_verify'] . '<br>'; else echo '<br>';?>
+                <label><input type="password" name="pwd" placeholder="password"></label>
+                <br>
+                <br>
+                <label><input type="password" name="pwdVer" placeholder="verify password"></label>
+                <br>
+                <label><input type="submit" name="register" value="Register"></label>
+            </form>
+        </div>
+    </section>
+<?php } else { ?>
+    <main>
+        <h3>You have reached this page in error.</h3>
+        <h3>You are already logged in as <?php echo htmlspecialchars($_SESSION['username']) . '.';?></h3>
+    </main>
+<?php }
 include('includes/footer.php'); ?>

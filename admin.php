@@ -1,6 +1,8 @@
 <?php
 require_once('../../secure_conn.php');
-include('includes/header.php');
+include('includes/header.php');?>
+    <main>
+<?php
 if(isset($_POST['update'])) { // Checks if the role update submission was clicked.
     if (!empty($_POST['username'])) {
         if (preg_match('/^\w+$/', $_POST['username']))
@@ -92,12 +94,12 @@ elseif(isset($_POST['upload'])) { // Checks if the upload file submission was cl
 //release the uploaded file resource
 if(file_exists($_FILES['admin_upload']['tmp_name']) && is_file($_FILES['admin_upload']['tmp_name']))
     unlink($_FILES['admin_upload']['tmp_name']);
-}?>
-    <main>
-<?php if(isset($_SESSION['username']) && ($_SESSION['role'] == 'Owner' || $_SESSION['role'] == 'Admin')) {
+}
+if(isset($_SESSION['username']) && ($_SESSION['role'] == 'Owner' || $_SESSION['role'] == 'Admin')) {
         if(isset($success)) echo '<h4>' . $success . '</h4>';?>
         <section class="admin">
             <form action="admin.php" method="POST">
+                <br>
                 <h4>Change a user's role:</h4>
                 <?php if(isset($error['username'])) echo $error['username'] . '<br>'; else echo '<br>';?>
                 <label><input type="text" name="username" <?php if(isset($username)) echo 'value="' . htmlspecialchars($username) . '"'; else echo 'placeholder="username"';?>></label>

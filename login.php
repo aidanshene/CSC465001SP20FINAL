@@ -60,8 +60,10 @@ if(!isset($_SESSION['username'])) {?>
         </form>
     </section>
 <?php } else {?>
+    <main>
         <h3>You have reached this page in error.</h3>
         <h3>You are already logged in as <?php echo htmlspecialchars($_SESSION['username']) . '.';?></h3>
+    </main>
 <?php
 }
 include('includes/footer.php');?>
